@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="HttpAndGrpcProductServices.Application/HttpAndGrpcProductServices.Application.csproj" />
+  <Project Path="HttpAndGrpcProductServices.Client/HttpAndGrpcProductServices.Client.csproj" />
+  <Project Path="HttpAndGrpcProductServices.Domain/HttpAndGrpcProductServices.Domain.csproj" />
+  <Project Path="HttpAndGrpcProductServices.Grpc/HttpAndGrpcProductServices.Grpc.csproj" />
+  <Project Path="HttpAndGrpcProductServices.Http/HttpAndGrpcProductServices.Http.csproj" />
+  <Project Path="HttpAndGrpcProductServices.Infrastructure/HttpAndGrpcProductServices.Infrastructure.csproj" />
+  <Project Path="HttpAndGrpcProductServices/HttpAndGrpcProductServices.csproj" />
+</Solution>

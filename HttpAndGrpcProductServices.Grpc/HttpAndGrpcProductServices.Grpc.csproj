@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.84.0" />
+    <PackageReference Include="Grpc.Core.Api" Version="2.84.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.68.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Grpc.JsonTranscoding" Version="10.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.11" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.2" />
+    <PackageReference Include="ServiceModel.Grpc.AspNetCore.Swashbuckle" Version="1.26.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HttpAndGrpcProductServices.Application\HttpAndGrpcProductServices.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<Protobuf Include="Protos\products.proto" GrpcServices="Server" />
+	<Protobuf Include="google\api\http.proto" GrpcServices="None" />
+	<Protobuf Include="google\api\annotations.proto" GrpcServices="None" />
+  </ItemGroup>
+
+</Project>

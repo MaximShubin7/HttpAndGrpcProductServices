@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>51b57d6a-e27b-4367-8f8d-a67e07315775</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="2.84.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.24.2-preview.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HttpAndGrpcProductServices.Application\HttpAndGrpcProductServices.Application.csproj" />
+    <ProjectReference Include="..\HttpAndGrpcProductServices.Domain\HttpAndGrpcProductServices.Domain.csproj" />
+    <ProjectReference Include="..\HttpAndGrpcProductServices.Grpc\HttpAndGrpcProductServices.Grpc.csproj" />
+    <ProjectReference Include="..\HttpAndGrpcProductServices.Http\HttpAndGrpcProductServices.Http.csproj" />
+    <ProjectReference Include="..\HttpAndGrpcProductServices.Infrastructure\HttpAndGrpcProductServices.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
